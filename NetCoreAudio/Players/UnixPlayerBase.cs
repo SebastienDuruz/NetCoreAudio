@@ -100,6 +100,6 @@ namespace NetCoreAudio.Players
             }
         }
 
-        public abstract Task SetVolume(byte percent);
+        public abstract Task SetVolume(byte percent, string target = null);
     }
 }

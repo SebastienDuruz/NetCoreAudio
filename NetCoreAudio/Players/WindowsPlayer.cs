@@ -123,7 +123,7 @@ namespace NetCoreAudio.Players
             return Task.CompletedTask;
         }
 
-        public Task SetVolume(byte percent)
+        public Task SetVolume(byte percent, string target = null)
         {
             // Calculate the volume that's being set
             int NewVolume = ushort.MaxValue / 100 * percent;

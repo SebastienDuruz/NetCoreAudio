@@ -14,6 +14,6 @@ namespace NetCoreAudio.Interfaces
         Task Pause();
         Task Resume();
         Task Stop();
-        Task SetVolume(byte percent);
+        Task SetVolume(byte percent, string target = null);
     }
 }

@@ -19,7 +19,7 @@ namespace NetCoreAudio.Players
             }
         }
 
-        public override Task SetVolume(byte percent)
+        public override Task SetVolume(byte percent, string target = null)
         {
             if (percent > 100)
                 throw new ArgumentOutOfRangeException(nameof(percent), "Percent can't exceed 100");
